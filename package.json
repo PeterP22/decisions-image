@@ -1,0 +1,15 @@
+{
+  "name": "decisions-image",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ask yes/no questions about images with OpenAI Decisions",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "live": "node --env-file-if-exists=.env src/server.mjs --live",
+    "test": "node --test",
+    "smoke:live": "node --env-file-if-exists=.env scripts/smoke-live.mjs",
+    "fixtures": "node scripts/generate-fixtures.mjs"
+  }
+}
